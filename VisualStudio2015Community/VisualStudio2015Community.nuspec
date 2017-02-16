@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
 	<metadata>
 		<id>VisualStudio2015Community</id>
-		<version>2015.03.03</version>
+		<version>2017.02.16</version>
 		<title>Visual Studio 2015 Community Update 3</title>
 		<authors>Microsoft</authors>
 		<projectUrl>https://www.visualstudio.com/vs-2015-product-editions</projectUrl>
@@ -19,11 +19,6 @@
 			- Full-featured Integrated Development Environment for building Web, Windows Desktop and cross-platform iOS, Android, and Windows apps.
 			- Ecosystem with thousands of extensions to choose from in the Visual Studio Gallery, or create your own.
 			- Free for open source projects, academic research, training, education and small professional teams.
-
-			### Attention Windows 8.1 and  Windows Server 2012 R2 Users
-
-			You must have Windows RT 8.1, Windows 8.1, and Windows Server 2012 R2 update: April 2014 installed in order to install Visual Studio 2015
-			You can download KB2919355 here https://support.microsoft.com/en-us/kb/2919355
 
 			### Customizations
 			You can customize the installation either by adding optional available features or by specifying own installation configuration file.
@@ -44,12 +39,20 @@
 			choco install VisualStudio2015Community -packageParameters "--AdminFile http://path/to/your/AdminDeployment.xml"
 		</description>
 		<releaseNotes>
-- Updated AdminDeployment.xml for Visual Studio Professional 2015 Update 3 2018-02-26
-- Added dependency on .NET
-- Switched download protocol to HTTPS
+			- Package refactored to use chocolatey-visualstudio.extension
+			- Added dependencies
 		</releaseNotes>
 		<dependencies>
-			<dependency id="dotnet4.6.1" />
+			<dependency id="chocolatey-visualstudio.extension" version="1.0.0" />
+			<dependency id="KB2882822" version="1.0.0" />
+			<dependency id="KB2919355" version="1.0.20160719" />
+			<dependency id="vcredist2012" version="11.0.60610" />
+			<dependency id="vcredist2013" version="12.0.30501.20150616" /> <!-- actually 12.0.21005, but there is no package for that version -->
+			<dependency id="vcredist2015" version="14.0.24215.20170201" />
+			<dependency id="netfx-4.6.1-devpack" version="4.6.01055.00" />
+			<dependency id="dotnet4.6-targetpack" version="4.6.00081.20150925" />
+			<dependency id="netfx-4.5.2-devpack" version="4.5.5165101" />
+			<dependency id="netfx-4.5.1-devpack" version="4.5.50932" />
 		</dependencies>
 	</metadata>
 </package>

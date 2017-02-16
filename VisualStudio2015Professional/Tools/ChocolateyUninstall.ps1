@@ -1,3 +1,5 @@
-Import-Module (Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) 'VSModules.psm1')
-
-Uninstall-VS 'VisualStudio2015Professional' 'Microsoft Visual Studio Professional 2015' 'vs_professional.exe'
+Uninstall-VisualStudio `
+    -PackageName 'VisualStudio2015Professional' `
+    -ApplicationName 'Microsoft Visual Studio Professional 2015' `
+    -UninstallerName 'vs_professional.exe' `
+    -InstallerTechnology 'MsiVS2015OrEarlier'
