@@ -5,6 +5,7 @@
     <SelectableItemCustomization Id="VSUV3RTMV1" Hidden="no" Selected="yes" FriendlyName="Visual Studio 2015 Update 3" />
     <SelectableItemCustomization Id="MicroUpdateV3.5" Selected="yes" FriendlyName="Update for Microsoft Visual Studio 2015 (KB3165756)" />
     <SelectableItemCustomization Id="WebToolsV1" Hidden="no" Selected="yes" FriendlyName="Microsoft Web Developer Tools" />
+<!--
     <SelectableItemCustomization Id="GitForWindowsx64V8" Hidden="no" Selected="yes" FriendlyName="Git for Windows" />
     <SelectableItemCustomization Id="GitForWindowsx86V8" Hidden="no" Selected="yes" FriendlyName="Git for Windows" />
     <SelectableItemCustomization Id="Win10SDK_HiddenV2" Selected="yes" FriendlyName="Windows 10 SDK (10.0.10586)" />
@@ -78,5 +79,6 @@
     <SelectableItemCustomization Id="AppInsightsToolsVSWinExpressHiddenVSU3RTMV1" Selected="no" FriendlyName="Developer Analytics Tools v7.0.2" />
     <SelectableItemCustomization Id="AppInsightsToolsVWDExpressHiddenVSU3RTMV1" Selected="no" FriendlyName="Developer Analytics Tools v7.0.2" />
     <SelectableItemCustomization Id="UWPStartPageV1" Selected="no" FriendlyName="Tools for Universal Windows Apps Getting Started Experience" />
+-->
   </SelectableItemCustomizations>
 </AdminDeploymentCustomizations>
